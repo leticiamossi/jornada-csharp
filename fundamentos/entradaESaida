@@ -1,0 +1,28 @@
+🟢 Entrada e Saída (I/O)
+
+## 📌 O que são
+São formas de interação com o usuário:
+  - Saída: sistema exibe informações para o usuário.
+  - Entrada: sistema recebe dados informado pelo usuário.
+
+---
+
+## 🔝 Principais comandos
+
+- Console.Write - mostra na tela sem quebra de linha ao final.
+- Console.WriteLine - mostra na tela com quebra de linha ao final;
+- Console.Read - lê o próximo caracter inserido pelo usuário (apenas 1 caracter).
+- Console.ReadLine - lê a frase inserida pelo usuário (até o ENTER ser acionado).
+    Obs.: Sempre retorna string, para número é necessário converter.
+---
+
+## 💻 Exemplo básico
+
+// Mostra na tela
+Console.Write("Digite seu nome: "); 
+
+// Recebe a string que o usuário digitar e armazena em "nome"
+string nome = Console.ReadLine(); 
+
+// Mostra a string digitada pelo usuário na tela
+Console.WriteLine("Olá, " + nome);
