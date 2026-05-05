@@ -1,0 +1,26 @@
+🟢 Variáveis e Tipos C#
+
+## 📌 O que são
+São simbolos que representam espaços de armazenamento na memória do computador.
+Cada variável tem um tipo que indica:
+  - tamanho da memória que ele ocupa;
+  - qual tipo de dado ela armazena;
+  - como o dado é tratado.
+
+---
+
+## 🔤 Tipos mais usados
+
+- int → números inteiros  
+- double → números decimais  
+- string → textos  
+- bool → verdadeiro ou falso  
+
+---
+
+## 💻 Exemplo básico
+
+int idade = 23;
+string nome = "Leticia";
+double altura = 1.64;
+bool maiorDeIdade = true;
