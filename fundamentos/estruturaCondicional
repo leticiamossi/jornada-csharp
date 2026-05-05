@@ -1,0 +1,63 @@
+🟢 Estruturas de Condicional
+
+## 📌 O que são
+São entruturas que dependem do resultado de um expressão condicional (Verdadeiro ou falso) para decidir qual caminho do código seguir seguir.
+
+---
+
+## 🔝 Principais estruturas
+
+# If/else
+  Estrutura básica: Se verdadeiro seguir caminho A, se não seguir caminho B;
+    if(expressão bool)
+    {
+      // caminho A
+    } else {
+      // caminho B
+    }
+  *else if pode ser adicionado entre os dois, adiciona um novo teste condicional (cuidar para não incluir muitos teste lógicos)
+  *operador ternário é a mesma ideia do If/else porém uma expressão de uma linha: expressãoBoolena ? seVerdadeiro : seFalso
+
+# Switch
+  Estrura de condição com base em comparação de valores
+    switch(variavel ou valor)
+    {
+        case valor 1:
+            // caminho A
+            break;
+        case valor 2:
+            // caminho B
+            break;
+    }
+  *onde se a "variavel" for igual "valor 1", ele segue o caminho A. Se for igual "valor 2" segue caminho B.
+  *possivel adicionar "default" onde segue se não for igual a nenhum case;
+
+---
+
+## 💻 Exemplo básico
+
+int i = 2;
+if(i == 2)
+{
+  Console.WriteLine("O valor é 2.");
+} else {
+  Console.WriteLine("O valor NÃO é 2.");
+}
+OUTPUT: O valor é 2.
+
+---
+
+string nome = "Joana";
+switch(nome)
+{
+  case "Maria":
+    Console.WriteLine("O nome é Maria.");
+    break;
+  case "Leticia":
+    Console.WreiteLine("O nome é Leticia.";
+    break;
+  default:
+    Console.WriteLine("O nome não está entre as opções.");
+    break;
+}
+OUTPUT: O nome não está entre as opções.
