@@ -1,0 +1,67 @@
+🟢 Estruturas de repetição
+
+## 📌 O que são
+São formas de executar um bloco de código repetidas vezes.
+
+---
+
+## 🔝 Principais comandos
+
+- for - ideal para quando sabe previamente quantas iterações deverão acontecer.
+        possui uma inicialização (i = 0), uma condição de continuação (i < 10) e uma incremento ou decremento (i++).
+            for(i = 0; i < 10; i++){
+                //bloco de código                   // Cada iteração vai somar um em i, iniciando do 0, e irá para quando i = 9
+            } 
+- while - ideal se não se sabe o número de iterações mas há uma condição de continuação ou parada.
+            while(contador < 10) {
+                //bloco de código                   // Fará iterações até o contador tiver valor 10 ou maior
+            }
+- do-while - igual ao while, porém garante a execução do bloco pelo menos uma vez, pois testa a condição apenas ao final do bloco.
+            do{
+                //bloco de código                  // Fará a primeira iteração e testará a condição, se o contador for menor que 10 executará o bloco novamente. Para quando contador tiver valor 10 ou maior.
+            }while(contador < 10);
+-foreach - ideal quando se quer iterar sobre um coleção de dados e não é necessário controle de índice.
+            foreach(var i in colecaoDeDados){
+                //bloco de código                  // Percorrerá a lista/array colecaoDeDados, para acessar o item da vez ele estará na variavel i. (usar o tipo de variavél certo para o item da coleção)
+            }
+---
+
+## 💻 Exemplo básico
+
+for(i = 0; i < 3; i++){
+  Console.WriteLine("Execução " + i);
+}
+OUTPUT: Execução 0
+        Execução 1
+        Execução 2
+
+---
+
+int contador = 0;
+while(contador < 3){
+  Console.WriteLine("Execução " + i);
+  contador++;
+}
+OUTPUT: Execução 0
+        Execução 1
+        Execução 2
+
+---
+
+int contador = 0;
+do{
+  Console.WriteLine("Execução " + i);
+  contador = 3;
+}while(contador < 3);
+OUTPUT: Execução 0
+
+---
+
+int[] colecaoDeDados = {0, 1, 2, 3}
+foreach(int i in colecaoDeDados){
+  Console.WriteLine("Execução " + i);
+}
+OUTPUT: Execução 0
+        Execução 1
+        Execução 2
+        Execução 3
