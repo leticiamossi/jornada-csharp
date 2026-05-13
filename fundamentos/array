@@ -1,0 +1,50 @@
+🟢 Array (Vetor)
+
+## 📌 O que são
+Estrutura que contém uma série de dados ordenados (os elementos).
+São referenciados por um número ordinal (o índice), inciado em zero.
+
+---
+
+## 🔝 Principais tipos
+
+- Array de uma dimensão: possui apenas uma dimensão linear -> array = {1, 2, 3}
+    Sua declaração -> tipo de dado + [] + nome do array
+                      int[] array;
+- Array de duas dimensões: possui linha e coluna (matriz) -> array = {{1, 2}, {3, 4}, {5,6}}
+    Sua declaração -> tipo de dado + [,] + nome do array
+                      int[,] array;
+- Array de array: é um array dentro de outro -> array = {{1, 2, 3}, {4, 5, 6}}
+    Sua declaração -> tipo de dado + [][] + nome do array
+                      int[][] array;
+
+## 📏 Definindo tamanho
+Existem três formas de definir o tamanho do array:
+  -Definir o tamanho no operador new:
+            int[] array = new int[2];                 - {1, 2}
+            int[,] array = new int[2,3];              - {{1, 2}, {3, 4}, {5, 6}}
+            int[][] array = new int[2][3];            - {new int[]{1, 2, 3}, new int[]{4, 5, 6}}
+  -Omitir tamanho do array:
+            int[] array = new int[];                  - {1, 2}
+            int[,] array = new int[,];                - {{1, 2}, {3, 4}, {5, 6}}
+            int[][] array = new int[][];              - {new int[]{1, 2, 3}, new int[]{4, 5, 6}}
+  -Omitir operador new:
+            int[] array = {1, 2}                      - {1, 2}
+            int[,] array = {{1, 2}, {3, 4}, {5, 6}}   - {{1, 2}, {3, 4}, {5, 6}}
+
+---
+
+## 💻 Exemplo básico
+
+string[] nomes = {"Maria", "João", "Livia", "Mateus"};
+foreach(var nome in nomes)
+{
+    Console.log($"{nome}\n");  
+}
+Console.log($"{nomes[2]}\n");
+
+OUTPUT: Maria
+        João
+        Livia 
+        Mateus
+        Livia
