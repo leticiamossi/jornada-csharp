@@ -1,0 +1,43 @@
+🟢 Funções (Métodos)
+
+## 📌 O que são
+São blocos de código que executam tarefas específicas e podem ser reutilizadas em diferentes partes do código.
+Função é o conceito geral, no C# (POO) essas funções ficam dentro das classes e ganham o nome de método.
+---
+
+## 🔝 Partes
+
+1. Modificadores de acesso: quem pode acessar o métodos.
+2. Tipo de retorno: define o que o método devolve. (void não retorna nada)
+3. Nome do método: nome para chamar, deve descrever o que faz.
+4. Parâmetros: valores que o método recebe.
+
+__1__  _2_  __3__  _____4______ 
+public int  Somar (int a, int b) 
+{
+    return a + b;
+}
+
+---
+
+## 💻 Exemplo básico
+
+public class Calculadora
+{
+    public int Somar (int a, int b)
+    {
+        return a + b;
+    }
+}
+
+class Program
+{
+    static void Main()
+    {
+        Calculadora calc = new Calculadora();
+        int resultado = calc.Somar(20, 7);
+        Console.WriteLine($"Resultado: {resultado}");
+    }
+}
+
+OUTPUT: Resultado: 27
